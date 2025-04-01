@@ -1,12 +1,13 @@
 // DESAFIO: TORNAR O CODIGO DINÂMICO
 
 alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto = parseInt(Math.random() * 100 + 1);
+let numMax = prompt('Digite o valor máximo possível para o jogo de adivinhação:');
+let numeroSecreto = parseInt(Math.random() * numMax + 1);
 let tentativas = 1;
 let chute;
 
-while(chute != numeroSecreto){
-    chute = prompt('Escolha um numero de 1 a 100');
+while(chute != numeroSecreto){''
+    chute = prompt(`Escolha um numero entre 1 e ${numMax}:`);
 
     if (chute == numeroSecreto){
         break;
